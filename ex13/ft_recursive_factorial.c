@@ -6,7 +6,7 @@
 /*   By: filimigu <filimigu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 23:08:11 by filimigu          #+#    #+#             */
-/*   Updated: 2026/10/22 10:42:54 by filimigu         ###   ########.fr       */
+/*   Updated: 2026/10/23 14:56:57 by filimigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_recursive_factorial(int nb)
 {
-	if (nb < 0)
+	if (nb < 0 || nb > 12)
 		return (0);
 	if (nb == 0 || nb == 1)
 		return (1);
@@ -24,7 +24,7 @@ int	ft_recursive_factorial(int nb)
 
 // int	main(void)
 // {
-// 	int	num = 5;
+// 	int	num = 13;
 
 // 	printf("The factorial of %d is %d\n", num, ft_recursive_factorial(num));
 // 	return (0);
